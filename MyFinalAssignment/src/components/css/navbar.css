@@ -1,0 +1,21 @@
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    background-color: gray;
+  }
+  
+  .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    padding: 1% 1%;
+  }
+  
+  a:hover{
+      background-color: rgba(107, 5, 5, 0.027);
+  }
+  

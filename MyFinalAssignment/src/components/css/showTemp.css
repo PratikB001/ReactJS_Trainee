@@ -1,0 +1,19 @@
+.display-wrapper{
+    margin: auto;
+    width: 50%;
+    border: 1px solid green;
+    padding: 10px;
+}
+
+.temperature{
+    font-family: 'Nunito', sans-serif;
+    padding: 1px 1px
+}
+.humidity{
+    font-family: 'Nunito', sans-serif;
+    padding: 1px 1px
+}
+.description{
+    font-family: 'Nunito', sans-serif;
+    padding: 1px 1px
+}
