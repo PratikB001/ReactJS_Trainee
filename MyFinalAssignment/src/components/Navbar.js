@@ -1,20 +1,18 @@
 import React from "react";
 import "./css/navbar.css";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <React.Fragment>
-      <Router>
-        <div className='navbar'>
-          <Link className='item' to='/'>
-            Weather
-          </Link>
-          <Link className='item' to='/profile'>
-            About Us
-          </Link>
-        </div>
-      </Router>
+    <div className='navbar'>
+      <NavLink className='item' to='/'>
+        Weather
+      </NavLink>
+      <NavLink className='item' to='/about'>
+        About Us
+      </NavLink>
+    </div>
     </React.Fragment>
   );
 };

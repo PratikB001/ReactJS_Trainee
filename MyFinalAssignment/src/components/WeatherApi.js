@@ -17,7 +17,7 @@ const WeatherApi = () => {
   const handleClick = () => {
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=940c70484ecf44ca73d1d2d4ec33ddd2`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=940c70484ecf44ca73d1d2d4ec33ddd2&units=metric`
       )
       .then((response) => {
         setData({
@@ -46,7 +46,6 @@ const WeatherApi = () => {
           Search
         </button>
       </div>
-
       <ShowTemp text={data}></ShowTemp>
       <Map weather={data} />
     </React.Fragment>
