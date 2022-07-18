@@ -15,6 +15,9 @@ const WeatherApi = () => {
   });
 
   const handleClick = () => {
+    if(city === ''){
+      alert ('Please enter a city');
+    }
     axios
       .get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=940c70484ecf44ca73d1d2d4ec33ddd2&units=metric`
@@ -27,6 +30,8 @@ const WeatherApi = () => {
           lat: response.data.coord.lat,
           lon: response.data.coord.lon,
         });
+      }, error => {
+        alert("Enter a valid city name");
       });
   };
 
